@@ -27,7 +27,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-go-
       - name: Build
-        run: make build -j8
+        run: make build
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
