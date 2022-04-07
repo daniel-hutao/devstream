@@ -37,11 +37,14 @@ jobs:
       - name: Configure EKS credentials
         run: |
           aws eks update-kubeconfig --region ap-southeast-1 --name dtm-test
+      - name: export env
+        run: export GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} && export JIRA_API_TOKEN=${{ secrets.JIRA_API_TOKEN }}
       - name: apply
-        run: export GITHUB_TOKEN=${{ github.GITHUB_TOKEN }} && export JIRA_API_TOKEN=${{ secrets.JIRA_API_TOKEN }} && ./dtm apply -f ./test/e2e/yaml/e2e-config.yaml -y
+        run: ./dtm apply -f ./test/e2e/yaml/e2e-config.yaml -y
+
 #      - name: apply twice
 #        run: ./dtm apply -f ./test/e2e/yaml/e2e-config.yaml -y
 #      - name: verify
 #        run: ./dtm verify -f ./test/e2e/yaml/e2e-config.yaml
-#      - name: clean
-#        run: ./dtm delete -f ./test/e2e/yaml/e2e-config.yaml --force -y
+      - name: clean
+        run: ./dtm delete -f ./test/e2e/yaml/e2e-config.yaml --force -y
