@@ -1,6 +1,7 @@
 {
   "latest": "latest",
   "versions": {
-    "v0.5.0": "https://docs.devstream.io/en/v0.5.0/"
+    "v0.6.0": "https://docs.devstream.io/en/v0.6.0/",
+    "v0.9.9": "https://docs.devstream.io/en/v0.9.9/"
   }
 }
