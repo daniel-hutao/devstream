@@ -77,7 +77,7 @@ Want to remove or reinstall a specific piece in the workflow? DevStream has got 
 
 ## Quick Start
 
-If you want to get a quick start, follow our [quick start](./docs/quickstart_en.md) doc now.
+If you want to get a quick start, follow our [quick start](docs/en/docs/quickstart_en.md) doc now.
 
 ## Best Practices Toolchain Integration
 
@@ -123,4 +123,4 @@ We will regularly organize `DevStream Community Meeting`, please visit the [wiki
 - Message us on <a href="https://join.slack.com/t/devstream-io/shared_invite/zt-16tb0iwzr-krcFGYRN7~Vv1suGZjdv4w" target="_blank">Slack.</a>
 - For Chinese users, the WeChat group QR code is as below:
 
-![](docs/images/wechat-group-qr-code.png)
+![](docs/en/docs/images/wechat-group-qr-code.png)
